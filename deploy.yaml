@@ -2,7 +2,7 @@
 - hosts: webserver
   become: yes
   vars:
-    - war_name: java-hello-world-webapp-1.0-SNAPSHOT.war
+    - war_name: java-hello-world.war
     - tomcat_version: 10
     - war_remote_path: /opt/tomcat{{ tomcat_version }}/webapps
   tasks:
@@ -16,7 +16,7 @@
     - name: Copy WAR to Remote server
       copy: 
         src: ./target/{{ war_name }} 
-        dest: "{{ war_remote_path }}/helloworld.war"
+        dest: "{{ war_remote_path }}/{{ war_name }}"
         owner: tomcat 
         group: tomcat
       notify: restart tomcat
