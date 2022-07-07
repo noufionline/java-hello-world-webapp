@@ -2,7 +2,7 @@
 - hosts: webserver
   become: yes
   vars:
-    - war_name: addressbook-2.0.war
+    - war_name: java-hello-world-webapp.war
     - tomcat_version: 10
     - war_remote_path: /opt/tomcat{{ tomcat_version }}/webapps
   tasks:
