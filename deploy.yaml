@@ -8,6 +8,7 @@
   tasks:
     - name: Run Manven
       shell: "-B -f ./pom.xml clean package"
+      become: yes
       
     - name: Create Directory
       file:
