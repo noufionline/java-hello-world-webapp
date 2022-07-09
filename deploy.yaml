@@ -7,7 +7,6 @@
     - war_remote_path: /opt/tomcat{{ tomcat_version }}/webapps
   tasks:
     - name: Install Maven using Ansible
-      become: yes
       apt:
         name: maven
         state: present
