@@ -6,6 +6,12 @@
     - tomcat_version: 10
     - war_remote_path: /opt/tomcat{{ tomcat_version }}/webapps
   tasks:
+    - name: Install Maven using Ansible
+      become: yes
+      apt:
+        name: maven
+        state: present
+  
     - name: Running mvn clean
       shell: "mvn clean package"
       register: mvn_result
