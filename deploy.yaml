@@ -8,7 +8,7 @@
   tasks:
     - name: Run Manven
       shell:
-        cmd: "sudo mvn -B -f /var/lib/jenkins/workspace/ansible-deploy/pom.xml clean package"
+        cmd: "sudo mvn clean package"
            
     - name: Create Directory
       file:
