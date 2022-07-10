@@ -13,8 +13,6 @@
 
 <div class="">
  <h1>This is a Changed Heading Using report pull trigger</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
 </div>
 
 </body>
