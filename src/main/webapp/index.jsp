@@ -12,7 +12,7 @@
 <img src="img_la.jpg" alt="LA" style="width:100%">
 
 <div class="">
- <h1>This is a Changed Heading Using report pull trigger</h1>
+ <h1>This is a Changed Heading Using ansible playbook</h1>
 </div>
 
 </body>
