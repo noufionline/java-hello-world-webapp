@@ -1,8 +1,1 @@
-
-{  
-    "employee": {  
-        "name":       "Noufal",   
-        "company":      XYZ Private Limited,   
-        "married":    true  
-    }  
-}  
+XYZ Company web site is updated
