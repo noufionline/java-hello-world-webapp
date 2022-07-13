@@ -1,5 +1,12 @@
-XYZ Company web site is updated
-New Content Added !!!
+<!DOCTYPE html>
+<html>
 
-HI How are you?
-asdfdaffads
+   <head>
+      <title>HTML marquee Tag</title>
+   </head>
+	
+   <body>
+      <marquee width = "50%">This example will take only 50% width</marquee>
+   </body>
+	
+</html>
