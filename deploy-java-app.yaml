@@ -10,7 +10,7 @@
       shell: "mvn clean install package"
       register: mvn_result
 
-    - name: "mvn clean task output"
+    - name: "/usr/share/maven/bin/mvn clean task output"
       debug:
         var: mvn_result
 
