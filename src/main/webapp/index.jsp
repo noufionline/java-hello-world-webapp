@@ -7,7 +7,7 @@
 	
    <body>
 	   <h1>XYZ Ltd Website</h1>
-	   <h2>Coming Sooon!!!</h2>
+	   <h2>Welcome to Version 1.</h2>
    </body>
 	
 </html>
