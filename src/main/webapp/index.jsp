@@ -2,11 +2,12 @@
 <html>
 
    <head>
-      <title>HTML marquee Tag</title>
+      <title>XYZ Ltd</title>
    </head>
 	
    <body>
-      <marquee width = "50%">This example will take only 50% width</marquee>
+	   <h1>XYZ Ltd Website</h1>
+	   <h2>Coming Sooon!!!</h2>
    </body>
 	
 </html>
