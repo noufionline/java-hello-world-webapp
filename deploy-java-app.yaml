@@ -1,0 +1,36 @@
+---
+- hosts: webserver
+  become: yes
+  vars:
+    - war_name: java-hello-world.war
+    - tomcat_version: 10
+    - war_remote_path: /opt/tomcat{{ tomcat_version }}/webapps
+  tasks:
+    - name: Running mvn clean
+      shell: "mvn clean install package"
+      register: mvn_result
+
+    - name: "mvn clean task output"
+      debug:
+        var: mvn_result
+
+    - name: Create Directory
+      file:
+        path: "{{ war_remote_path }}"
+        state: directory
+        owner: tomcat
+        group: tomcat
+        
+    - name: Copy WAR to Remote server
+      copy: 
+        src: ./target/{{ war_name }} 
+        dest: "{{ war_remote_path }}/{{ war_name }}"
+        owner: tomcat 
+        group: tomcat
+      notify: restart tomcat
+
+  handlers:
+    - name: restart tomcat
+      service:
+        name: tomcat
+        state: restarted
